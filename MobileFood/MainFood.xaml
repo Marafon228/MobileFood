@@ -10,22 +10,30 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="123*"/>
-            <ColumnDefinition Width="677*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="27*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="49*"/>
-            <RowDefinition Height="401*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="133*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Главная" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Column="1" Height="27" Margin="243,11,362,11" Width="72"/>
+        <StackPanel HorizontalAlignment="Right" Grid.Column="1" Margin="0" Width="140">
+            <Button Width="100" Height="15" Margin="5" Background="Transparent" Click="Button_Click_2">
+                <TextBlock Text="FIO" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10"></TextBlock>
+            </Button>
+            
+            <Button   Content="Смена пользователя" Width="120" Height="20" Margin="5"></Button>
+        </StackPanel>
+        <TextBlock Text="Главная" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Height="26"  Width="72" Grid.Column="1" Margin="245,14,358,11"/>
+
         <Frame Grid.Row="1" Grid.Column="1" x:Name="MainFrame"></Frame>
         <StackPanel Grid.Row="1">
-            <Button Width="70"  Height="25" ></Button>
-            <Button Width="70"  Height="25" ></Button>
-            <Button Width="70"  Height="25" ></Button>
+            <Button Content="Home" Click="Button_Click" Width="70"  Height="25" ></Button>
+            <Button Content="Orders" Click="Button_Click_1" Width="70"  Height="25" ></Button>
+            <Button Content="Name" Width="70"  Height="25" ></Button>
             <Button Width="70"  Height="25" ></Button>
             <Button Width="70"  Height="25" ></Button>
         </StackPanel>
-        
+
     </Grid>
 </Page>
